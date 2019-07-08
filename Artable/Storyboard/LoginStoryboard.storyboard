@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="Jad-lH-1Yh">
             <objects>
-                <viewController id="F7p-tm-G7v" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="F7p-tm-G7v" customClass="LoginVC" customModule="Artable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OYN-hz-Jzc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +56,7 @@
                                             <color key="titleColor" name="myRed"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sb-dx-4Dh">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sb-dx-4Dh" customClass="RoundedButton" customModule="Artable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="206.5" width="374" height="40"/>
                                         <color key="backgroundColor" name="myBlue"/>
                                         <constraints>
@@ -67,7 +67,7 @@
                                             <color key="titleColor" name="myWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltj-ks-AGQ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltj-ks-AGQ" customClass="RoundedButton" customModule="Artable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="264.5" width="374" height="40"/>
                                         <color key="backgroundColor" name="myRed"/>
                                         <constraints>
@@ -81,7 +81,7 @@
                                             <segue destination="nEb-1U-1lD" kind="show" id="kOn-74-wNS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRb-MQ-xIT">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRb-MQ-xIT" customClass="RoundedButton" customModule="Artable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="322.5" width="374" height="40"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -122,7 +122,7 @@
         <!--RegisterVC-->
         <scene sceneID="Bm0-Ma-gs1">
             <objects>
-                <viewController id="nEb-1U-1lD" customClass="RegisterVC" customModule="Artable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterVC" id="nEb-1U-1lD" customClass="RegisterVC" customModule="Artable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cnh-se-UuX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +175,7 @@
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXT-pQ-Ile">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXT-pQ-Ile" customClass="RoundedButton" customModule="Artable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="242.5" width="374" height="40"/>
                                         <color key="backgroundColor" name="myBlue"/>
                                         <constraints>
@@ -230,8 +230,10 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="eOJ-n5-ip7" id="ZWM-bW-rSH"/>
+                        <outlet property="confirmPassCheckImage" destination="vtS-Ao-DJm" id="cYG-Uv-9Ri"/>
                         <outlet property="confirmPassTextField" destination="Dta-OK-fXb" id="rBI-r2-Efb"/>
                         <outlet property="emailTextField" destination="ZhW-dT-B7f" id="cgp-iR-8TR"/>
+                        <outlet property="passCheckImage" destination="1ZS-aW-eok" id="iye-Vl-Qa4"/>
                         <outlet property="passwordTextField" destination="QKY-S6-2KF" id="KGL-MK-VyP"/>
                         <outlet property="usernameTextField" destination="PiK-yc-qfC" id="7Re-1l-lam"/>
                     </connections>
