@@ -30,7 +30,7 @@
 		6C3CD69422D2E67E0091BE0E /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3CD69222D2E59D0091BE0E /* RoundedViews.swift */; };
 		6C7762CF22D053990087A233 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762CE22D053990087A233 /* LoginVC.swift */; };
 		6C7762D122D053D70087A233 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762D022D053D70087A233 /* RegisterVC.swift */; };
-		6C7762D322D056160087A233 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762D222D056160087A233 /* ViewController.swift */; };
+		6C7762D322D056160087A233 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762D222D056160087A233 /* HomeVC.swift */; };
 		6C7762D522D05BF80087A233 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762D422D05BF80087A233 /* AlertController.swift */; };
 		6C7762D622D05BF80087A233 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762D422D05BF80087A233 /* AlertController.swift */; };
 		6CA7497622CF3E05004781AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CA7497522CF3E05004781AC /* GoogleService-Info.plist */; };
@@ -61,7 +61,7 @@
 		6C3CD69222D2E59D0091BE0E /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		6C7762CE22D053990087A233 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		6C7762D022D053D70087A233 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
-		6C7762D222D056160087A233 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C7762D222D056160087A233 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		6C7762D422D05BF80087A233 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		6CA7497522CF3E05004781AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9B21A93DF55C37FB9247CDFC /* Pods-ArtableAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.release.xcconfig"; path = "Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				6C7762CE22D053990087A233 /* LoginVC.swift */,
-				6C7762D222D056160087A233 /* ViewController.swift */,
+				6C7762D222D056160087A233 /* HomeVC.swift */,
 				6C7762D022D053D70087A233 /* RegisterVC.swift */,
 			);
 			path = Controller;
@@ -411,7 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C7762D322D056160087A233 /* ViewController.swift in Sources */,
+				6C7762D322D056160087A233 /* HomeVC.swift in Sources */,
 				6C7762CF22D053990087A233 /* LoginVC.swift in Sources */,
 				6C08E01F22CEE4D800B9BF87 /* AppDelegate.swift in Sources */,
 				6C7762D522D05BF80087A233 /* AlertController.swift in Sources */,

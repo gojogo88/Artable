@@ -60,22 +60,47 @@ class RegisterVC: UIViewController {
       let email = self.emailTextField.text, email.isNotEmpty,
       let password = self.passwordTextField.text, password.isNotEmpty
     else {
-      let simpleAlert = Alert.errorAlert(title: "Sign in Error", message: "Email and Passowrd can't be empty")
+      let simpleAlert = Alert.errorAlert(title: "Sign in Error", message: "Please fill up all fields.")
+      present(simpleAlert, animated: true)
+      
+      return
+    }
+    
+    guard
+      let confirmPass = confirmPassTextField.text, confirmPass == password
+    else {
+      let simpleAlert = Alert.errorAlert(title: "Password Error", message: "Passwords do not match.")
       present(simpleAlert, animated: true)
       
       return
     }
     
     activityIndicator.startAnimating()
-    Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-      
+    
+    guard let authUser = Auth.auth().currentUser else { return }
+    
+    let credential = EmailAuthProvider.credential(withEmail: email, link: password)
+    authUser.linkAndRetrieveData(with: credential) { (result, error) in
       if let error = error {
         debugPrint(error.localizedDescription)
+        self.handleFireAuthError(error: error)
         return
       }
-      
       self.activityIndicator.stopAnimating()
-      print("Successfully registered new user.")
+      //print("Successfully registered new user.")
+      self.dismiss(animated: true, completion: nil)
     }
+    
+//    Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+//      
+//      if let error = error {
+//        debugPrint(error.localizedDescription)
+//        return
+//      }
+//      
+//      self.activityIndicator.stopAnimating()
+//      //print("Successfully registered new user.")
+//      self.dismiss(animated: true, completion: nil)
+//    }
   }
 }

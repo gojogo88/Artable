@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct storyboard {
+struct Storyboard {
   static let LoginStoryboard = "LoginStoryboard"
 }
 

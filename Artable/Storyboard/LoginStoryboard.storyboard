@@ -14,7 +14,7 @@
         <!--LoginVC-->
         <scene sceneID="Jad-lH-1Yh">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" id="F7p-tm-G7v" customClass="LoginVC" customModule="Artable" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F7p-tm-G7v" customClass="LoginVC" customModule="Artable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OYN-hz-Jzc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -55,6 +55,9 @@
                                         <state key="normal" title="Forgot Password">
                                             <color key="titleColor" name="myRed"/>
                                         </state>
+                                        <connections>
+                                            <action selector="forgotPassButtonPressed:" destination="F7p-tm-G7v" eventType="touchUpInside" id="F3z-uY-NjU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sb-dx-4Dh" customClass="RoundedButton" customModule="Artable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="206.5" width="374" height="40"/>
@@ -66,6 +69,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" name="myWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="F7p-tm-G7v" eventType="touchUpInside" id="PXx-4N-9fb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltj-ks-AGQ" customClass="RoundedButton" customModule="Artable" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="264.5" width="374" height="40"/>
@@ -91,6 +97,9 @@
                                         <state key="normal" title="Continue as guest">
                                             <color key="titleColor" name="myWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="guestButtonPressed:" destination="F7p-tm-G7v" eventType="touchUpInside" id="PeY-gw-vkm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -114,6 +123,11 @@
                         <viewLayoutGuide key="safeArea" id="gny-4Z-kzw"/>
                     </view>
                     <navigationItem key="navigationItem" id="odB-fg-xVg"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="sYH-LK-Zwc" id="tmF-Ug-Ais"/>
+                        <outlet property="emailTextField" destination="GKc-nz-2ue" id="3OC-Zz-c7Q"/>
+                        <outlet property="passwordTextField" destination="ZTR-aW-VT4" id="5gy-6l-VkW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U8T-ar-agd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -245,7 +259,7 @@
         <!--Navigation Controller-->
         <scene sceneID="xHo-ws-gUK">
             <objects>
-                <navigationController storyboardIdentifier="loginVC" automaticallyAdjustsScrollViewInsets="NO" id="Kxl-PF-1fi" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginVC" automaticallyAdjustsScrollViewInsets="NO" id="Kxl-PF-1fi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wpU-6v-6Iv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
