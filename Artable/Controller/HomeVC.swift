@@ -20,6 +20,7 @@ class HomeVC: UIViewController {
   var categories = [Category]()
   var selectedCategory: Category!
   var db: Firestore!
+  var listener: ListenerRegistration!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,14 +39,14 @@ class HomeVC: UIViewController {
         }
       }
     }
-    
-    //fetchDocument()
-    fetchCollection()
   }
   
   
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
+    
+    //fetchDocument()
+    fetchCollection()
     
     if let user = Auth.auth().currentUser, !user.isAnonymous {
       logInOutButton.title = "Logout"
@@ -53,6 +54,12 @@ class HomeVC: UIViewController {
       logInOutButton.title = "Login"
     }
   }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    listener.remove()
+  }
+  
   @IBAction func logInOutButtonPressed(_ sender: Any) {
     guard let user = Auth.auth().currentUser else { return }
     
@@ -88,24 +95,35 @@ class HomeVC: UIViewController {
 //    }
   }
   
-  /* Fetch single document
+  /*Fetch single document
   fileprivate func fetchDocument() {
     let docRef = db.collection("categories").document("Jcm1TCcdVTfpgSZm8rUu")
-    docRef.getDocument { (snap, error) in
+    
+    listener = docRef.addSnapshotListener { (snap, error) in
+      self.categories.removeAll()
       guard let data = snap?.data() else { return }
       
       let newCat = Category.init(data: data)
       self.categories.append(newCat)
       self.collectionView.reloadData()
     }
+    
+//    docRef.getDocument { (snap, error) in
+//      guard let data = snap?.data() else { return }
+//
+//      let newCat = Category.init(data: data)
+//      self.categories.append(newCat)
+//      self.collectionView.reloadData()
+//    }
   }
  */
   
   fileprivate func fetchCollection() {
     let collectionRef = db.collection("categories")
     
-    collectionRef.getDocuments { (snap, error) in
+    listener = collectionRef.addSnapshotListener { (snap, error) in
       guard let documents = snap?.documents else { return }
+      self.categories.removeAll()
       for document in documents {
         let data = document.data()
         let newCat = Category.init(data: data)
@@ -113,6 +131,16 @@ class HomeVC: UIViewController {
       }
       self.collectionView.reloadData()
     }
+    
+//    collectionRef.getDocuments { (snap, error) in
+//      guard let documents = snap?.documents else { return }
+//      for document in documents {
+//        let data = document.data()
+//        let newCat = Category.init(data: data)
+//        self.categories.append(newCat)
+//      }
+//      self.collectionView.reloadData()
+//    }
   }
   
   fileprivate func presentLoginVC() {
