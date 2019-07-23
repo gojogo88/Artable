@@ -20,3 +20,12 @@ struct AppImages {
   static let GreenCheck = "green_check"
   static let RedCheck = "red_check"
 }
+
+struct Identifiers {
+  static let CategoryCell = "CategoryCell"
+  static let ProductCell = "ProductCell"
+}
+
+struct Segues {
+  static let toProducts = "toProductsVC"
+}

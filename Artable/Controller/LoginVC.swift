@@ -23,6 +23,10 @@ class LoginVC: UIViewController {
     }
     
   @IBAction func forgotPassButtonPressed(_ sender: Any) {
+    let vc = ForgetPasswordVC()
+    vc.modalTransitionStyle = .crossDissolve
+    vc.modalPresentationStyle = .overCurrentContext
+    present(vc, animated: true, completion: nil)
   }
   
   @IBAction func loginButtonPressed(_ sender: Any) {
@@ -41,7 +45,7 @@ class LoginVC: UIViewController {
       
       if let error = error {
         debugPrint(error.localizedDescription)
-        self.handleFireAuthError(error: error)
+        Auth.auth().handleFireAuthError(error: error, vc: self)
         return
       }
       

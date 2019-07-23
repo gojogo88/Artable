@@ -33,7 +33,25 @@
 		6C7762D322D056160087A233 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762D222D056160087A233 /* HomeVC.swift */; };
 		6C7762D522D05BF80087A233 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762D422D05BF80087A233 /* AlertController.swift */; };
 		6C7762D622D05BF80087A233 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7762D422D05BF80087A233 /* AlertController.swift */; };
+		6CA37C1D22D85B3F00596897 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA37C1C22D85B3F00596897 /* ProductsVC.swift */; };
+		6CA37C1E22D85B4A00596897 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA37C1C22D85B3F00596897 /* ProductsVC.swift */; };
+		6CA37C2022D85B9800596897 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA37C1F22D85B9800596897 /* Product.swift */; };
+		6CA37C2122D85B9800596897 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA37C1F22D85B9800596897 /* Product.swift */; };
+		6CA37C2422D8600A00596897 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA37C2222D8600A00596897 /* ProductCell.swift */; };
+		6CA37C2522D8600A00596897 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA37C2222D8600A00596897 /* ProductCell.swift */; };
+		6CA37C2622D8600A00596897 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA37C2322D8600A00596897 /* ProductCell.xib */; };
+		6CA37C2722D8600A00596897 /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CA37C2322D8600A00596897 /* ProductCell.xib */; };
 		6CA7497622CF3E05004781AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CA7497522CF3E05004781AC /* GoogleService-Info.plist */; };
+		6CD30A0622D5BBA100DDE23A /* ForgetPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD30A0422D5BBA100DDE23A /* ForgetPasswordVC.swift */; };
+		6CD30A0722D5BBA100DDE23A /* ForgetPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD30A0522D5BBA100DDE23A /* ForgetPasswordVC.xib */; };
+		6CD30A0922D5E4DC00DDE23A /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD30A0822D5E4DC00DDE23A /* Firebase+Utils.swift */; };
+		6CD30A0A22D5E59200DDE23A /* Firebase+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD30A0822D5E4DC00DDE23A /* Firebase+Utils.swift */; };
+		6CD30A0C22D5ECF200DDE23A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD30A0B22D5ECF200DDE23A /* Category.swift */; };
+		6CD30A0D22D5ECF200DDE23A /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD30A0B22D5ECF200DDE23A /* Category.swift */; };
+		6CD30A1022D5ED9100DDE23A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD30A0E22D5ED9100DDE23A /* CategoryCell.swift */; };
+		6CD30A1122D5ED9100DDE23A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD30A0E22D5ED9100DDE23A /* CategoryCell.swift */; };
+		6CD30A1222D5ED9100DDE23A /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD30A0F22D5ED9100DDE23A /* CategoryCell.xib */; };
+		6CD30A1322D5ED9100DDE23A /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD30A0F22D5ED9100DDE23A /* CategoryCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +81,17 @@
 		6C7762D022D053D70087A233 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		6C7762D222D056160087A233 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		6C7762D422D05BF80087A233 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		6CA37C1C22D85B3F00596897 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		6CA37C1F22D85B9800596897 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6CA37C2222D8600A00596897 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		6CA37C2322D8600A00596897 /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
 		6CA7497522CF3E05004781AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6CD30A0422D5BBA100DDE23A /* ForgetPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordVC.swift; sourceTree = "<group>"; };
+		6CD30A0522D5BBA100DDE23A /* ForgetPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordVC.xib; sourceTree = "<group>"; };
+		6CD30A0822D5E4DC00DDE23A /* Firebase+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Utils.swift"; sourceTree = "<group>"; };
+		6CD30A0B22D5ECF200DDE23A /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		6CD30A0E22D5ED9100DDE23A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		6CD30A0F22D5ED9100DDE23A /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		9B21A93DF55C37FB9247CDFC /* Pods-ArtableAdmin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtableAdmin.release.xcconfig"; path = "Target Support Files/Pods-ArtableAdmin/Pods-ArtableAdmin.release.xcconfig"; sourceTree = "<group>"; };
 		BC7C943C1F1D69F15DBDAFFC /* Pods-Artable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Artable.debug.xcconfig"; path = "Target Support Files/Pods-Artable/Pods-Artable.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,7 +140,7 @@
 		6C08E01D22CEE4D800B9BF87 /* Artable */ = {
 			isa = PBXGroup;
 			children = (
-				6C7762CD22D053220087A233 /* Model */,
+				6CD30A0322D5BB8500DDE23A /* Xibs */,
 				6C7762CC22D0531D0087A233 /* View */,
 				6C7762CB22D053170087A233 /* Controller */,
 				6C7762CA22D053100087A233 /* Storyboard */,
@@ -139,6 +167,8 @@
 		6C08E04622CEE89300B9BF87 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6CD30A1422D5EDCC00DDE23A /* Xibs */,
+				6C7762CD22D053220087A233 /* Model */,
 				6C3CD69122D2E5900091BE0E /* View */,
 				6C3CD68822D2D81D0091BE0E /* Utils */,
 				6C08E02522CEE4DB00B9BF87 /* Assets.xcassets */,
@@ -153,6 +183,7 @@
 			children = (
 				6C3CD68922D2D82D0091BE0E /* Extensions.swift */,
 				6C3CD68C22D2DC980091BE0E /* Constants.swift */,
+				6CD30A0822D5E4DC00DDE23A /* Firebase+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -161,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				6C3CD69222D2E59D0091BE0E /* RoundedViews.swift */,
+				6CD30A0E22D5ED9100DDE23A /* CategoryCell.swift */,
+				6CA37C2222D8600A00596897 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +214,7 @@
 				6C7762CE22D053990087A233 /* LoginVC.swift */,
 				6C7762D222D056160087A233 /* HomeVC.swift */,
 				6C7762D022D053D70087A233 /* RegisterVC.swift */,
+				6CA37C1C22D85B3F00596897 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,8 +229,28 @@
 		6C7762CD22D053220087A233 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6CD30A0B22D5ECF200DDE23A /* Category.swift */,
+				6CA37C1F22D85B9800596897 /* Product.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6CD30A0322D5BB8500DDE23A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				6CD30A0422D5BBA100DDE23A /* ForgetPasswordVC.swift */,
+				6CD30A0522D5BBA100DDE23A /* ForgetPasswordVC.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		6CD30A1422D5EDCC00DDE23A /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				6CD30A0F22D5ED9100DDE23A /* CategoryCell.xib */,
+				6CA37C2322D8600A00596897 /* ProductCell.xib */,
+			);
+			path = Xibs;
 			sourceTree = "<group>";
 		};
 		D8ED8D0AE04BF7675E8EEA91 /* Frameworks */ = {
@@ -302,12 +356,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CA37C2622D8600A00596897 /* ProductCell.xib in Resources */,
 				6C18E65522CEEBA400804675 /* Colors.xcassets in Resources */,
 				6C08E02922CEE4DB00B9BF87 /* LaunchScreen.storyboard in Resources */,
+				6CD30A0722D5BBA100DDE23A /* ForgetPasswordVC.xib in Resources */,
 				6C08E02622CEE4DB00B9BF87 /* Assets.xcassets in Resources */,
 				6C08E02422CEE4D800B9BF87 /* Main.storyboard in Resources */,
 				6C18E65222CEE98E00804675 /* LoginStoryboard.storyboard in Resources */,
 				6C18E65B22CF2EC400804675 /* GoogleService-Info.plist in Resources */,
+				6CD30A1222D5ED9100DDE23A /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C08E04122CEE88C00B9BF87 /* LaunchScreen.storyboard in Resources */,
+				6CD30A1322D5ED9100DDE23A /* CategoryCell.xib in Resources */,
+				6CA37C2722D8600A00596897 /* ProductCell.xib in Resources */,
 				6C18E65822CEEC4B00804675 /* Colors.xcassets in Resources */,
 				6CA7497622CF3E05004781AC /* GoogleService-Info.plist in Resources */,
 				6C08E04722CEE8A200B9BF87 /* Assets.xcassets in Resources */,
@@ -411,14 +470,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CD30A0922D5E4DC00DDE23A /* Firebase+Utils.swift in Sources */,
 				6C7762D322D056160087A233 /* HomeVC.swift in Sources */,
+				6CD30A0622D5BBA100DDE23A /* ForgetPasswordVC.swift in Sources */,
 				6C7762CF22D053990087A233 /* LoginVC.swift in Sources */,
 				6C08E01F22CEE4D800B9BF87 /* AppDelegate.swift in Sources */,
+				6CA37C1D22D85B3F00596897 /* ProductsVC.swift in Sources */,
 				6C7762D522D05BF80087A233 /* AlertController.swift in Sources */,
 				6C3CD69322D2E59D0091BE0E /* RoundedViews.swift in Sources */,
 				6C3CD68D22D2DC980091BE0E /* Constants.swift in Sources */,
 				6C7762D122D053D70087A233 /* RegisterVC.swift in Sources */,
 				6C3CD68A22D2D82D0091BE0E /* Extensions.swift in Sources */,
+				6CD30A0C22D5ECF200DDE23A /* Category.swift in Sources */,
+				6CA37C2422D8600A00596897 /* ProductCell.swift in Sources */,
+				6CD30A1022D5ED9100DDE23A /* CategoryCell.swift in Sources */,
+				6CA37C2022D85B9800596897 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +492,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CA37C1E22D85B4A00596897 /* ProductsVC.swift in Sources */,
 				6C3CD69422D2E67E0091BE0E /* RoundedViews.swift in Sources */,
 				6C3CD68E22D2DC9A0091BE0E /* Constants.swift in Sources */,
 				6C7762D622D05BF80087A233 /* AlertController.swift in Sources */,
 				6C08E03922CEE88800B9BF87 /* ViewController.swift in Sources */,
+				6CA37C2122D85B9800596897 /* Product.swift in Sources */,
 				6C08E03722CEE88800B9BF87 /* AppDelegate.swift in Sources */,
+				6CD30A1122D5ED9100DDE23A /* CategoryCell.swift in Sources */,
+				6CD30A0A22D5E59200DDE23A /* Firebase+Utils.swift in Sources */,
+				6CA37C2522D8600A00596897 /* ProductCell.swift in Sources */,
 				6C3CD68B22D2DC8D0091BE0E /* Extensions.swift in Sources */,
+				6CD30A0D22D5ECF200DDE23A /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
